@@ -8,3 +8,7 @@
 ### Likes and dislikes
 ### Comments 
 
+
+# Usage:
+
+## go run cmd/main.go
