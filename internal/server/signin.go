@@ -12,7 +12,7 @@ import (
 	uuid "github.com/satori/go.uuid"
 )
 
-//PostSignIn ..
+// PostSignIn ..
 func (handle *Handle) PostSignIn(w http.ResponseWriter, r *http.Request) {
 	if r.Method != http.MethodPost {
 		w.WriteHeader(405)
@@ -77,8 +77,9 @@ func (handle *Handle) PostSignIn(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-//GetSignIn ..
+// GetSignIn ..
 func (handle *Handle) GetSignIn(w http.ResponseWriter, r *http.Request) {
+	w.Write([]byte("bekateka"))
 	t, err := template.ParseFiles("./templates/html/login.html")
 	if err != nil {
 		w.WriteHeader(500)
